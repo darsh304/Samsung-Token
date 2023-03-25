@@ -1,28 +1,21 @@
-/*////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    Themes Bootstrap - Personal Portfolio Template v1.0.0 (https://themesbootstrap.com.mx/templates/personal-portfolio-template.html)
-    Copyright 2019 Themes Bootstrap
-    Licensed under MIT (https://github.com/diegovr7/personal-portfolio/blob/master/LICENSE)
-
-////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #000000;
-    font-family: 'Roboto', sans-serif;
+    background-color: #0077b6;
     font-weight: 300 !important;
 }
 
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Mukta', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
     font-weight: 300;
 }
 
@@ -37,12 +30,16 @@ a:hover {
 }
 
 .primary-btn {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    color: #000000 !important;
     padding: 15px 40px;
     display: inline-block;
     margin-top: 20px;
+    border: 1px solid white;
+    color: white;
+    transition: background-color 0.25s;
+}
+
+hr{
+    border-top: 1px solid #ccc;
 }
 
 .primary-btn:hover {
@@ -73,7 +70,7 @@ button {
 }
 
 .navbar {
-    background-color: #000000;
+    background-color: #023e8a;
 }
 
 .nav-link {
@@ -97,10 +94,11 @@ button {
 }
 
 .heading-content {
-    max-width: 900px;
+    margin: 6em 0 !important;
+    max-width: 100%;
     margin: 0 auto;
-    font-family: 'Merriweather', serif;
     color: #ffffff;
+    text-align: center;
 }
 
 .heading-content h2 {
@@ -109,7 +107,6 @@ button {
 }
 
 .heading-content p {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: rgba(255,255,255,0.5);
 }
@@ -132,7 +129,6 @@ Hero
 ////////////////////////////////////////*/
 
 #hero h1 {
-    font-family: 'Merriweather', serif;
     font-size: 60px;
     line-height: 1.6;
     color: #ffffff; 
@@ -143,9 +139,6 @@ Hero
     transition: all .2s ease-in-out;
 }
 
-.hero-container:hover {
-    transform: scale(1.03);
-}
 
 .hero-details {
     position: absolute;
@@ -156,7 +149,6 @@ Hero
 }
 
 .hero-details h3 {
-    font-family: 'Merriweather', serif;
     font-size: 36px;
 }
 
@@ -184,21 +176,21 @@ Portfolio
     position: relative;
     margin: 10px 0;
     transition: all .2s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.portfolio-container:hover {
-    transform: scale(1.03);
+* img{
+    max-width: 50%;
+    text-align: center;
 }
+
 
 .portfolio-details {
-    position: absolute;
     color: #ffffff;
-    top: 20px;
-    left: 20px;
 }
 
 .portfolio-details h3 {
-    font-family: 'Merriweather', serif;
     margin-top: 5px;
 }
 
@@ -238,12 +230,11 @@ Blog
 }
 
 .blog-post:hover {
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     transition: all .2s ease-in-out;
 }
 
 .blog-post h4 {
-    font-family: 'Merriweather', serif;
     line-height: 1.6;
     margin-bottom: 40px;
 }
@@ -292,7 +283,6 @@ Footer
 
 #footer {
     color: #ffffff;
-    font-family: 'Merriweather', serif;
     text-align: center;
     padding: 90px 0 30px 0;
 }
@@ -303,7 +293,6 @@ Footer
 
 #footer small {
     color: rgba(255,255,255,0.5);
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: .25em;
     margin-top: 30px;
@@ -356,6 +345,7 @@ Media queries
 @media (max-width: 768px) { 
     .portfolio-details h3 {
         font-size: 22px;
+        display: block;
     }
 }
 
